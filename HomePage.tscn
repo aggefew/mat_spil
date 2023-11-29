@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://HomePage.gd" type="Script" id=1]
+
+[node name="HomePage" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+level_name = "Home"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+process_priority = 1
+margin_right = 1322.0
+margin_bottom = 785.0
+
+[node name="Brøker" type="Button" parent="."]
+margin_left = 54.0
+margin_top = 108.0
+margin_right = 304.0
+margin_bottom = 258.0
+text = "Brøker"
+
+[node name="Funktioner" type="Button" parent="."]
+margin_left = 399.0
+margin_top = 108.0
+margin_right = 649.0
+margin_bottom = 258.0
+rect_pivot_offset = Vector2( 92, 99 )
+text = "Funktioner"
+
+[node name="Ligninger" type="Button" parent="."]
+margin_left = 727.0
+margin_top = 111.0
+margin_right = 977.0
+margin_bottom = 261.0
+text = "Ligninger"
+
+[connection signal="pressed" from="Brøker" to="." method="_on_Brker_pressed"]
+[connection signal="pressed" from="Funktioner" to="." method="_on_Funktioner_pressed"]
+[connection signal="pressed" from="Ligninger" to="." method="_on_Ligninger_pressed"]

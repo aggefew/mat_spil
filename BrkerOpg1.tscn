@@ -1,0 +1,139 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://BrkerOpg1.gd" type="Script" id=1]
+[ext_resource path="res://rødtkryds.png" type="Texture" id=2]
+[ext_resource path="res://Grønthak.png" type="Texture" id=3]
+
+[node name="BrkerOpg1" type="Node2D"]
+script = ExtResource( 1 )
+level_name = "BrkerOpg1"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 47.0
+margin_top = 73.0
+margin_right = 368.0
+margin_bottom = 98.0
+text = "Hvordan kan man skrive tallet 3 som en brøk?"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 668.0
+margin_top = 128.0
+margin_right = 944.0
+margin_bottom = 175.0
+toggle_mode = true
+text = "3/3"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 670.0
+margin_top = 203.0
+margin_right = 946.0
+margin_bottom = 250.0
+toggle_mode = true
+text = "3/9"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 669.0
+margin_top = 286.0
+margin_right = 945.0
+margin_bottom = 333.0
+toggle_mode = true
+text = "12/4"
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 671.0
+margin_top = 360.0
+margin_right = 947.0
+margin_bottom = 407.0
+toggle_mode = true
+text = "1/3"
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 669.0
+margin_top = 441.0
+margin_right = 945.0
+margin_bottom = 488.0
+toggle_mode = true
+text = "3/1"
+
+[node name="CheckAwnser" type="Button" parent="."]
+margin_left = 50.0
+margin_top = 509.0
+margin_right = 276.0
+margin_bottom = 554.0
+text = "Check svar"
+
+[node name="Wrong1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 630, 148 )
+scale = Vector2( 0.013, 0.013 )
+texture = ExtResource( 2 )
+
+[node name="Wrong2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 633, 221 )
+scale = Vector2( 0.013, 0.013 )
+texture = ExtResource( 2 )
+
+[node name="Wrong3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 632, 306 )
+scale = Vector2( 0.013, 0.013 )
+texture = ExtResource( 2 )
+
+[node name="Wrong4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 637, 381 )
+scale = Vector2( 0.013, 0.013 )
+texture = ExtResource( 2 )
+
+[node name="Wrong5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 627, 457 )
+scale = Vector2( 0.013, 0.013 )
+texture = ExtResource( 2 )
+
+[node name="Corect1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 634, 146 )
+scale = Vector2( 0.013, 0.013 )
+texture = ExtResource( 3 )
+
+[node name="Corect2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 632, 220 )
+scale = Vector2( 0.013, 0.013 )
+texture = ExtResource( 3 )
+
+[node name="Corect3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 639, 305 )
+scale = Vector2( 0.013, 0.013 )
+texture = ExtResource( 3 )
+
+[node name="Corect4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 639, 380 )
+scale = Vector2( 0.013, 0.013 )
+texture = ExtResource( 3 )
+
+[node name="Corect5" type="Sprite" parent="."]
+visible = false
+position = Vector2( 640, 461 )
+scale = Vector2( 0.013, 0.013 )
+texture = ExtResource( 3 )
+
+[node name="Button6" type="Button" parent="."]
+visible = false
+margin_left = 817.0
+margin_top = 20.0
+margin_right = 1001.0
+margin_bottom = 65.0
+text = "Gå tilbage"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="CheckAwnser" to="." method="_on_CheckAwnser_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]
